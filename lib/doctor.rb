@@ -21,7 +21,15 @@ class Doctor
   end
 
   def patients
-    self.patients ||= self.appointments.patient
-  end
+    appointments_collected = []
+    Appointment.all.select do |appointment_object|
+      if appointment_object.doctor == self
+        appointments_collected << appointment_object
+      end
+    end
+    appointments_collected.collect do |appointment_object|
+      appointment_object.patient
+    end
+    appointments_collected.uniq
 
 end #<---- CLASS end
