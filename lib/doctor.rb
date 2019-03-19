@@ -22,7 +22,7 @@ class Doctor
   end
 
   def patients
-    
+
     appointments.collect do |each_appointment|
       each_appointment.patient
     end
