@@ -6,7 +6,7 @@ class Patient
     @@all
   end
 
-  
+
 
   def initialize(name)
     @name = name
@@ -26,6 +26,6 @@ class Patient
   end
 
   def appointment
-    
+
   end
 end
