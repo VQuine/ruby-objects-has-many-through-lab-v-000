@@ -6,6 +6,8 @@ class Patient
     @@all
   end
 
+  
+
   def initialize(name)
     @name = name
     @@all << self
@@ -21,5 +23,9 @@ class Patient
 
   def doctors
     appointments.collect { |each_appointment| each_appointment.doctor }
+  end
+
+  def appointment
+    
   end
 end
