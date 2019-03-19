@@ -22,9 +22,9 @@ class Doctor
   end
 
   def patients
-    @patients =
+    
     appointments.collect do |each_appointment|
-      @patients << each_appointment.patient
+      each_appointment.patient
     end
   end
 
