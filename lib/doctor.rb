@@ -6,7 +6,6 @@ class Doctor
   def initialize(name)
     @name = name
     @@all << self
-
   end
 
   def self.all
@@ -24,7 +23,5 @@ class Doctor
   def patients
     appointments.collect { |each_appointment| each_appointment.patient }
   end
-
-
 
 end #<---- CLASS end
