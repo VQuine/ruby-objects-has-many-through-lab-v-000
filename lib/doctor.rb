@@ -22,7 +22,7 @@ class Doctor
   end
 
   def patients
-    @patients = []
+    @patients = 
     appointments.collect do |each_appointment|
       @patients << each_appointment.patient
     end
