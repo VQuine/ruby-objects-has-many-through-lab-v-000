@@ -27,9 +27,12 @@ class Doctor
         appointments_collected << appointment_object
       end
     end
+
     appointments_collected.collect do |appointment_object|
       appointment_object.patient
     end
+
     appointments_collected.uniq
+  end
 
 end #<---- CLASS end
