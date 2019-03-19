@@ -32,7 +32,7 @@ class Doctor
       appointment_object.patient
     end
 
-    appointments_collected.uniq
+    appointments_collected.name
   end
 
 end #<---- CLASS end
