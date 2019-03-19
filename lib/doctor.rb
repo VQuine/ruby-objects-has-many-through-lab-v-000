@@ -22,6 +22,7 @@ class Doctor
   end
 
   def patients
+    @patients = []
     self.appointments.collect do |each_appointment|
       @patients << each_appointment.patient
     end
