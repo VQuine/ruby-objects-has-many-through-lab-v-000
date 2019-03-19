@@ -21,7 +21,7 @@ class Doctor
   end
 
   def patients
-    appointments.collect { |appt| appt.patient }
+    self.patients == appointments.patients
   end
 
 end #<---- CLASS end
