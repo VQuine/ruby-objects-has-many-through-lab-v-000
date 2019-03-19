@@ -20,19 +20,6 @@ class Doctor
     Appointment.all.select { |appt| appt.doctor == self }
   end
 
-  def patients
-    appointments_collected = []
-    Appointment.all.select do |appointment_object|
-      if appointment_object.doctor == self
-        appointments_collected << appointment_object
-      end
-    end
 
-    appointments_collected.collect do |appointment_object|
-      appointment_object.patient
-    end
-
-    appointments_collected.name
-  end
 
 end #<---- CLASS end
