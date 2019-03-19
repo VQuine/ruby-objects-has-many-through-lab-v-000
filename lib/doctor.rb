@@ -23,7 +23,7 @@ class Doctor
 
   def patients
     self.appointments.collect do |each_appointment|
-      each_appointment.patient.uniq
+      @patients << each_appointment.patient
     end
   end
 
