@@ -21,7 +21,7 @@ class Doctor
   end
 
   def patients
-    self.patients == appointments.patients
+    self.patients ||= appointments.patients
   end
 
 end #<---- CLASS end
